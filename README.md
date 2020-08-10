@@ -27,19 +27,26 @@ The overall goal of this analysis is to explore the National Emissions Inventory
 
 # Analysis
 
-##Question 1.:## Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? Using the base plotting system, make a plot showing the total PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008.
+**Question 1.:** Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? Using the base plotting system, make a plot showing the total PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008.
 
-**Conclusion:** The total PM2.5 emissions across the United States has decreased from 1999 to 2008. The total emissions stabilized from 2002 to 2005 but significantly decreased from 2005 to 2008. 
+***Conclusion:*** The total PM2.5 emissions across the US has decreased from 1999 to 2008. The total emissions stabilized from 2002 to 2005 but notably decreased from 2005 to 2008. 
 
-##**Question 2.:**## Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == “24510”) from 1999 to 2008? Use the base plotting system to make a plot answering this question.
+**Question 2.:** Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == “24510”) from 1999 to 2008? 
 
-**Conclusion:** Ultimately, emissions in Baltimore City, MD have decreased from 1999 to 2008 but it was not a stable decrease in emissions with a spike in 2005.
+***Conclusion:*** Emissions in Baltimore City, MD have decreased from 1999 to 2008 but it can be seen a spike in 2005.
 
-##**Question 3.:**## Of the four types of sources indicated by the type (point, nonpoint, onroad, nonroad) variable, which of these four sources have seen decreases in emissions from 1999-2008 for Baltimore City? Which have seen increases in emissions from 1999-2008? Use the ggplot2 plotting system to make a plot answer this question.
-**Conclusion:** Emissions from on-road, non-point, and on-road sources all significantly decreased from 1999 to 2008. The only source that increased emissions slightly was from the point source.
-##**Question 4.:**## Across the United States, how have emissions from coal combustion-related sources changed from 1999-2008?
-**Conclusion:** Emissions across the United States related to coal combustion has decreased from 1999 to 2008.
-##**Question 5.:**## How have emissions from motor vehicle sources changed from 1999-2008 in Baltimore City?
-**Conclusion:** Emissions in Baltimore City, MD related to motor vehicle sources has steadily decreased from 1999 to 2008.
-##**Question 6.:**##  Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in Los Angeles County, California (fips == “06037”). Which city has seen greater changes over time in motor vehicle emissions?
-**Conclusion:** Emissions related to motor vehicle sources in Baltimore City vs Los Angeles has stark differences. Emmissions from Los Angeles heavily over power emissions from Balitimore City. Los Angeles has not decreased motor vehicle emissions at all from 1999 to 2008 while Baltimore City decreased emissions by over half.
+**Question 3.:** Of the four types of sources indicated by the type (point, nonpoint, onroad, nonroad) variable, which of these four sources have seen decreases in emissions from 1999-2008 for Baltimore City? Which have seen increases in emissions from 1999-2008?
+
+***Conclusion:*** Emissions from "on-road", "non-point", and "on-road sources" notably decreased from 1999 to 2008. The only source that slightly increased emissions was from the "point source".
+
+**Question 4.:** Across the United States, how have emissions from coal combustion-related sources changed from 1999-2008?
+
+***Conclusion:*** Emissions across the US related to coal combustion has seen a reduction from 1999 to 2008.
+
+**Question 5.:** How have emissions from motor vehicle sources changed from 1999-2008 in Baltimore City?
+
+***Conclusion:*** Emissions in Baltimore City, MD related to motor vehicle sources has decreased from 1999 to 2008.
+
+**Question 6.:** Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in Los Angeles County, California (fips == “06037”). Which city has seen greater changes over time in motor vehicle emissions?
+
+***Conclusion:*** Emissions related to motor vehicle sources in Baltimore City compared to Los Angeles (L.A.) has notable differences. Emmissions from L.A. heavily over from Baltimore City. L.A. has not reduced motor vehicle emissions from 1999 to 2008 while Baltimore City decreased emissions substantiatly.
