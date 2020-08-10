@@ -10,27 +10,32 @@ For each year and for each type of PM source, the NEI records how many tons of P
 Data for Peer Assessment [29Mb] 
 The zip file contains two files:
 
-1. PM2.5 Emissions Data (summarySCC_PM25.rds): This file contains a data frame with all of the PM2.5 emissions data for 1999, 2002, 2005, and 2008. For each year, the table contains number of tons of PM2.5 emitted from a specific type of source for the entire year. Here are the first few rows.
+**1. PM2.5 Emissions Data (summarySCC_PM25.rds):** This file contains a data frame with all of the PM2.5 emissions data for 1999, 2002, 2005, and 2008. For each year, the table contains number of tons of PM2.5 emitted from a specific type of source for the entire year. Here are the first few rows.
 
-- fips: A five-digit number (represented as a string) indicating the U.S. county
-- SCC: The name of the source as indicated by a digit string (see source code classification table)
-- Pollutant: A string indicating the pollutant
-- Emissions: Amount of PM2.5 emitted, in tons
-- type: The type of source (point, non-point, on-road, or non-road)
-- year: The year of emissions recorded
+- **fips**: A five-digit number (represented as a string) indicating the U.S. county
+- **SCC**: The name of the source as indicated by a digit string (see source code classification table)
+- **Pollutant**: A string indicating the pollutant
+- **Emissions**: Amount of PM2.5 emitted, in tons
+- **type**: The type of source (point, non-point, on-road, or non-road)
+- **year**: The year of emissions recorded
 
-2. Source Classification Code Table (Source_Classification_Code.rds): This table provides a mapping from the SCC digit strings in the Emissions table to the actual name of the PM2.5 source. The sources are categorized in a few different ways from more general to more specific. For example, source “10100101” is known as “Ext Comb /Electric Gen /Anthracite Coal /Pulverized Coal”.
+**2. Source Classification Code Table (Source_Classification_Code.rds):** This table provides a mapping from the SCC digit strings in the Emissions table to the actual name of the PM2.5 source. The sources are categorized in a few different ways from more general to more specific. For example, source “10100101” is known as “Ext Comb /Electric Gen /Anthracite Coal /Pulverized Coal”.
 
-# Thesis
+# Research goal
 
 The overall goal of this analysis is to explore the National Emissions Inventory database and see what it say about fine particulate matter pollution in the United states over the 10-year period 1999-2008. 
 
 # Analysis
 
-- # Question 1. # Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? Using the base plotting system, make a plot showing the total PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008.
-- ## Conclusion: ## The total PM2.5 emissions across the United States has decreased from 1999 to 2008. The total emissions stabilized from 2002 to 2005 but significantly decreased from 2005 to 2008. 
-- Q2. Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == “24510”) from 1999 to 2008? Use the base plotting system to make a plot answering this question.
-- Q3. Of the four types of sources indicated by the type (point, nonpoint, onroad, nonroad) variable, which of these four sources have seen decreases in emissions from 1999-2008 for Baltimore City? Which have seen increases in emissions from 1999-2008? Use the ggplot2 plotting system to make a plot answer this question.
-- Q4. Across the United States, how have emissions from coal combustion-related sources changed from 1999-2008?
-- Q5. How have emissions from motor vehicle sources changed from 1999-2008 in Baltimore City?
-- Q6. Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in Los Angeles County, California (fips == “06037”). Which city has seen greater changes over time in motor vehicle emissions?
+##**Question 1.:**## Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? Using the base plotting system, make a plot showing the total PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008.
+**Conclusion:** The total PM2.5 emissions across the United States has decreased from 1999 to 2008. The total emissions stabilized from 2002 to 2005 but significantly decreased from 2005 to 2008. 
+##**Question 2.:**## Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == “24510”) from 1999 to 2008? Use the base plotting system to make a plot answering this question.
+**Conclusion:** Ultimately, emissions in Baltimore City, MD have decreased from 1999 to 2008 but it was not a stable decrease in emissions with a spike in 2005.
+##**Question 3.:**## Of the four types of sources indicated by the type (point, nonpoint, onroad, nonroad) variable, which of these four sources have seen decreases in emissions from 1999-2008 for Baltimore City? Which have seen increases in emissions from 1999-2008? Use the ggplot2 plotting system to make a plot answer this question.
+**Conclusion:** Emissions from on-road, non-point, and on-road sources all significantly decreased from 1999 to 2008. The only source that increased emissions slightly was from the point source.
+##**Question 4.:**## Across the United States, how have emissions from coal combustion-related sources changed from 1999-2008?
+**Conclusion:** Emissions across the United States related to coal combustion has decreased from 1999 to 2008.
+##**Question 5.:**## How have emissions from motor vehicle sources changed from 1999-2008 in Baltimore City?
+**Conclusion:** Emissions in Baltimore City, MD related to motor vehicle sources has steadily decreased from 1999 to 2008.
+##**Question 6.:**##  Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in Los Angeles County, California (fips == “06037”). Which city has seen greater changes over time in motor vehicle emissions?
+**Conclusion:** Emissions related to motor vehicle sources in Baltimore City vs Los Angeles has stark differences. Emmissions from Los Angeles heavily over power emissions from Balitimore City. Los Angeles has not decreased motor vehicle emissions at all from 1999 to 2008 while Baltimore City decreased emissions by over half.
